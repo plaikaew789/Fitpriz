@@ -1,0 +1,199 @@
+
+.preloader-wrapper {
+    background: rgb(255, 255, 255) url(Asset/bike800.gif) no-repeat center ;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: 2s;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(205,114,57);
+    margin: 0;
+
+}
+
+
+.containernav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( black,rgb(205,114,57));
+}
+
+.navigation {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background-color: aliceblue;
+    border: 6px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 300px;
+
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500px;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    
+}
+
+.navigation ul li:hover a .icon{
+    transform: translateY(45px);
+    transition: 1s;
+}
+
+.navigation ul li a .textnav{
+    position: absolute;
+    color: black;
+    font-weight: 500px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+.navigation ul li:hover a .textnav{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+
+.navigation ul li a .icon .indicator {
+    position: absolute;
+    bottom: -70%;
+    width: 75px;
+    height: 75px;
+    background-image: radial-gradient( rgb(0, 255, 64),#e4fb3f,black);
+    border-radius: 50%;
+    border: 6px solid black;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navigation ul li:hover a .icon .indicator {
+
+    opacity: 1;
+    transform: translateY(1px);
+    top: -2px;
+    right: -22px;
+    transition: 0.5s;
+}
+
+
+.header {
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(48, 48, 47);
+}
+
+.grading2 {
+    background-image: linear-gradient(rgb(205,114,57),black);
+}
+.header2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(48, 48, 47);
+}
+
+.header span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150px;
+    text-shadow: 5px 5px 5px rgb(255, 75, 4);
+}
+
+.header2 span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px rgb(255, 75, 4);
+}
+
+p{
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.textbox1 span{
+    font-size: 120px;
+    color: aliceblue;
+    text-shadow: 5px 3px 6px #e4fb3f;
+    border: 20px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+.textbox1 .textQuestion{
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 5px 3px 5px #ee400b;
+    border: 20px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+.textQuestion {
+    font-size: 60px;
+    color:aliceblue;
+    text-shadow: 5px 3px 5px #0bee71;
+}
+
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+}
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
